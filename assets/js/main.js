@@ -1,4 +1,4 @@
-fetch('https://picsum.photos/v2/list')
+fetch('https://picsum.photos/v2/list?limit=80')
     .then(response => {
         console.log(response)
         console.log(response.status)
