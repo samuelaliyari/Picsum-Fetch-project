@@ -1,0 +1,85 @@
+/* ====================================================================
+                                RESET
+=====================================================================*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+body {
+    background-color: rgb(32, 32, 32);
+    border: 5px double #FFC300;
+    color: #d8a600;
+    min-height: fit-content;
+    text-align: center;
+    margin: 2%;
+    h1 {
+        margin-block: 3%;
+        font-size: 3rem;
+        text-decoration: underline;
+        line-height: 130%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: 1px 1px 3px  #000000;
+    }
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        gap: 2rem;
+        padding: 3%;
+        grid-auto-rows: auto;
+        figure {
+            img {
+                border: 2px solid #FFC300;
+                border-radius: 2%;
+                margin-top: 2rem;
+                transition: transform  500ms ease;
+
+                &:hover {
+                    border-color: #0004d6;
+                    color: #001d3d;
+                    transform: scale(110%) ;
+                    transform: translate(0, -5%) scale(110%);
+                }
+            }
+            figcaption {
+                margin-block: 4%;
+                font-size: 1.2rem;
+            }
+            button {
+                padding: 2% 4%;
+                margin-block: 4%;
+                background-color: rgba(0, 0, 128, 0);
+                color: #FFC300;
+                border: 2px solid #FFC300;
+                border-radius: 30%;
+                font-size: 1.2rem;
+                transition: all 200ms ease;
+                &:hover {
+                    background-color: #FFC300;
+                    color: #001d3d;
+                    transform: scale(120%);
+                    border: 4px solid #00026a;
+                }
+            } 
+        }
+    }
+}
