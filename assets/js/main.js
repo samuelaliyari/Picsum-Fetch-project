@@ -27,6 +27,7 @@ fetch('https://picsum.photos/v2/list')
 
         });
     })
+    .catch(error => console.log(error))
 
 
 
