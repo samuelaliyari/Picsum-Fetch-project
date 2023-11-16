@@ -19,7 +19,7 @@ fetch('https://picsum.photos/v2/list')
             const caption = document.createElement('figcaption');
             const moreBtn = document.createElement('button')
             gallery.append(box);
-            image.setAttribute('src', figure.download_url);
+            image.setAttribute('src', `${figure.download_url}?grayscale`);
             caption.textContent = figure.author;
             moreBtn.textContent = "See more"
             moreBtn.addEventListener("click", () => window.open(figure.url))
